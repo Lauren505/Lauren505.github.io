@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&Kanit:wght@600&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+.bgimg {
+  background-image: url('https://i.imgur.com/kXRuyq8.jpg');
+  height: 800px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  padding-top: 280px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.parallelogram {
+  width: 220px;
+  height: 40px;
+  transform: skew(30deg);
+  text-align: center;
+  line-height:40px;
+  background-color:rgb(255,255,255,0.5);
+}
+.parallelogram p{
+  text-align: left;
+  padding-left: 50px;
+  font-family: 'Crimson Text', serif;
+  transform: skew(-30deg);
+  font-size: 18px;
+}
+.info{
+  opacity: 0;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #F00000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 40px;
+}
+.info:hover{
+  -webkit-transition: 500ms;
+  opacity: 0.8;
+}
+</style>
+</head>
+<body>
+<div class="bgimg">
+<div class="row">
+  <div class="column">
+    <h1 align="right" style="font-family: 'Karla', sans-serif;font-weight: bold;">WANG</h1>
+    <h1 align="right" style="font-family: 'Karla', sans-serif;font-weight: bold;">WEI-HSIN</h1>
+    <hr align="right" style="border:0;background-color:rgb(255,255,255,0.5);height:1px;width:120px;">
+    <p align="right" style="font-family: 'Crimson Text', serif;font-size:16px;">A Biography...</p>
+  </div>
+  <div class="column">
+    <div class="parallelogram">
+      <a href="about.html" style="color:black;text-decoration:none;">
+      <p>About me</p>
+      <div class="info"></div>
+      </a>
+    </div>
+    <div class="parallelogram">
+      <a href="hobbies.html" style="color:black;text-decoration:none;">
+      <p style="font-family: 'Crimson Text', serif;">What I do</p>
+      <div class="info"></div>
+      </a>
+    </div>
+    <div class="parallelogram">
+      <a href="contact.html" style="color:black;text-decoration:none;">
+      <p style="font-family: 'Crimson Text', serif;">Contact</p>
+      <div class="info"></div>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
